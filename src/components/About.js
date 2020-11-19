@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import vicpic from "assets/vicpic.jpg"
 
 export default class About extends Component{
     render(){
@@ -6,7 +7,7 @@ export default class About extends Component{
             <div className="container-sm">
   <h1>About Me</h1>
   <div className="media">
-    <img src="assets/vicpic.jpg" width="350" className="align-self-start mr-3" alt="A pic of Vic" />
+    <img src={vicpic} width="350" className="align-self-start mr-3" alt="A pic of Vic" />
     <div className="media-body">
       <h5 className="mt-0">Driven and excited about the future</h5>
       <p>2020 has been a crazy year that I bet nobody saw coming. I started the year in a sales/marketing job that I didn't even realize I hated! I'm so thankful I've been giving the opportunity to find new passions, make new friends, and learn new things.</p>
