@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Our Task
 
-## Available Scripts
+Our job here is to convert our previous portfolio from an HTML application into a single page react application with the same functionality
 
-In the project directory, you can run:
+# Install dependencies
 
-### `npm start`
+We'll first need to install react with npx create-react-app (AppName) with the name of our App. We'll also want to use react router for switching our pages, so we'll also run
+npm install react-router-dom
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once that's done we'll need to think about how we want to structure our project
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Structure
 
-### `npm test`
+A react application will dynamically render the parts of our page that need to change, while leaving unchanged elements like headers and footers in place. 
+To do so, we'll first create a components folder, and add our separate elements as .js files in here. For this project those will be:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+header.js
+footer.js
+contact.js
+portfolio.js
+about.js
 
-### `npm run build`
+We'll also want to add in a folder (called assets) that will contain everything else we need, like pictures etc
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Because we'll be doing all our page switching from our header, we'll use code like the following for our route switching, which gets called by our router. (More on the router later). Here's an example
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`<Link to="/Contact" className={location.pathname === "/Contact" ? "nav-link active" : "nav-link"}>`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+App.js will dictate how the page is actually displayed, and call the router as well. Besides having all its dependencies imported, here's the structure of our app
 
-### `npm run eject`
+            <Router>
+                    <div>
+                    <Header/>
+                <Route exact path="/" component={About}/>
+                <Route exact path="/Contact" component={Contact}/>
+                <Route exact path="/Portfolio" component={Portfolio}/>
+                <Footer/>
+                </div>
+                    
+            </Router>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Since our Header and Footer are remaining onscreen, they don't need to have different paths per page, once they're rendered, they stay in place. However, the about, contact, and portfolio pages change, so once they're called they route to their component items and get rendered between the header and the footer.
