@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import vicpic from "assets/vicpic.jpg"
+import vicpic from "./assets/vicpic.jpg"
 
 export default class About extends Component{
     render(){

@@ -1,12 +1,12 @@
 import React, {Component} from "react"
-import chatroom from "assets/chatroom.png"
-import finishedapp from "assets/finishedapp.png"
-import job from "assets/job.png"
-import quizapp from "assets/quizapp.png"
+import chatroom from "./assets/chatroom.png"
+import finishedapp from "./assets/finishedapp.png"
+import job from "./assets/job.png"
+import quizapp from "./assets/quizapp.png"
 
-import shrek from "assets/shrek.png"
+import shrek from "./assets/shrek.png"
 
-import weather from "assets/weather.png"
+import weather from "./assets/weather.png"
 
 export default class Portfolio extends Component{
     render(){
