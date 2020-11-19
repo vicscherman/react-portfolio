@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import resume from "assets/resume.pdf"
+import resume from "./assets/resume.pdf"
 
 export default class Footer extends Component{
     render(){
