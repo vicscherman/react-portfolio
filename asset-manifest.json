@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.b7bbc536.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.b7bbc536.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.aa1a1076.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.aa1a1076.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.c9aab395.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.c9aab395.js.map",
     "static/js/2.539a6d8c.chunk.js": "/react-portfolio/static/js/2.539a6d8c.chunk.js",
@@ -12,11 +12,11 @@
     "index.html": "/react-portfolio/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/react-portfolio/static/css/main.6dea0f05.chunk.css.map",
     "static/js/2.539a6d8c.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.539a6d8c.chunk.js.LICENSE.txt",
+    "static/media/VictorScherman2021Resume.c51ee928.pdf": "/react-portfolio/static/media/VictorScherman2021Resume.c51ee928.pdf",
     "static/media/chatroom.594f9fcd.png": "/react-portfolio/static/media/chatroom.594f9fcd.png",
     "static/media/finishedapp.11e14d45.png": "/react-portfolio/static/media/finishedapp.11e14d45.png",
     "static/media/job.cc499ac7.png": "/react-portfolio/static/media/job.cc499ac7.png",
     "static/media/quizapp.df51f749.png": "/react-portfolio/static/media/quizapp.df51f749.png",
-    "static/media/resume.d3e865e0.pdf": "/react-portfolio/static/media/resume.d3e865e0.pdf",
     "static/media/shrek.d789e21f.png": "/react-portfolio/static/media/shrek.d789e21f.png",
     "static/media/vicpic.605c0158.jpg": "/react-portfolio/static/media/vicpic.605c0158.jpg",
     "static/media/weather.4d618168.png": "/react-portfolio/static/media/weather.4d618168.png"
@@ -25,6 +25,6 @@
     "static/js/runtime-main.c9aab395.js",
     "static/js/2.539a6d8c.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.b7bbc536.chunk.js"
+    "static/js/main.aa1a1076.chunk.js"
   ]
 }
