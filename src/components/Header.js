@@ -10,7 +10,7 @@ return (
 
       <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: 'cadetblue'}}>
             
-       <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+       <Link to="/react-portfolio/" className={location.pathname === "/react-portfolio/" ? "nav-link active" : "nav-link"}>
            < a className="navbar-brand ">
          Victor Scherman</a>
         </Link>
@@ -20,13 +20,13 @@ return (
         <div className="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarText">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item ">
-            <Link to="/Contact" className={location.pathname === "/Contact" ? "nav-link active" : "nav-link"}>
+            <Link to="/react-portfolio/Contact" className={location.pathname === "/react-portfolio/Contact" ? "nav-link active" : "nav-link"}>
           Contact
         </Link>
             </li>
             <li className="nav-item">
 
-            <Link to="/Portfolio" className={location.pathname === "/Portfolio" ? "nav-link active" : "nav-link"}>
+            <Link to="/react-portfolio/Portfolio" className={location.pathname === "/react-portfolio/Portfolio" ? "nav-link active" : "nav-link"}>
           Portfolio
         </Link>
 
@@ -34,7 +34,7 @@ return (
               
             </li>
             <li className="nav-item ">
-            <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
+            <Link to="/react-portfolio/" className={location.pathname === "/react-portfolio/" ? "nav-link active" : "nav-link"}>
           Home
         </Link>
             </li>

@@ -16,9 +16,9 @@ class App extends Component {
 		<Router>
 		<div>
 		<Header/>
-    <Route exact path="/" component={About}/>
-    <Route exact path="/Contact" component={Contact}/>
-    <Route exact path="/Portfolio" component={Portfolio}/>
+    <Route  exact path="/react-portfolio/" component={About}/>
+    <Route exact path="/react-portfolio/Contact" component={Contact}/>
+    <Route exact path="/react-portfolio/Portfolio" component={Portfolio}/>
     <Footer/>
     </div>
       	
