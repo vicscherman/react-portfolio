@@ -21,18 +21,18 @@ export default class Portfolio extends Component{
       <a href="https://github.com/vicscherman/homework5" target="_blank">Link to github repo</a>
     </div>
     <div className="col-md-4 col-12 pb-2">
-      <a href=" https://vicscherman.github.io/homework6/" target="_blank">
+      <a href=" https://vicscherman.github.io/weatherForecast/" target="_blank">
         <img src={weather} style={{height: '250px', width: '350px'}} alt="weatherdashboard" className="img-thumbnail " />
         <figcaption className="figure-caption">Weather Dashboard</figcaption>
       </a>
-      <a href="https://github.com/vicscherman/homework6" target="_blank">Link to github repo</a>
+      <a href="https://github.com/vicscherman/weatherForecast" target="_blank">Link to github repo</a>
     </div>
     <div className="col-md-4 col-12 pb-2">
-      <a href="https://vicscherman.github.io/project1" target="_blank">
+      <a href=" https://vicscherman.github.io/JobFinder/" target="_blank">
         <img src={job} style={{height: '250px', width: '350px'}} alt="jobfinder" className="img-thumbnail " />
         <figcaption className="figure-caption">Job Finder</figcaption>
       </a>
-      <a href="https://github.com/vicscherman/project1" target="_blank">Link to github repo</a>
+      <a href="https://github.com/vicscherman/JobFinder" target="_blank">Link to github repo</a>
     </div>
   </div>
   <div className="row">
@@ -41,14 +41,14 @@ export default class Portfolio extends Component{
         <img src={finishedapp} style={{height: '250px', width: '350px'}} alt="burger eating app" className="img-thumbnail " />
         <figcaption className="figure-caption">Bobby's Burgers</figcaption>
       </a>
-      <a href="https://github.com/vicscherman/11-burger" target="_blank">Link to github repo</a>
+      <a href="https://github.com/vicscherman/BurgerEater" target="_blank">Link to github repo</a>
     </div>
     <div className="col-md-4 col-12 pb-2">
       <a href="https://stark-springs-75145.herokuapp.com/" target="_blank">
         <img src={chatroom} style={{height: '250px', width: '350px'}} alt="online chat app" className="img-thumbnail " />
         <figcaption className="figure-caption">Online Chat App</figcaption>
       </a>
-      <a href="https://github.com/skar45/Project-2.git" target="_blank">Link to github repo</a>
+      <a href="https://github.com/vicscherman/ChatterLadder" target="_blank">Link to github repo</a>
     </div>
     <div className="col-md-4 col-12 pb-2">
       <a href="https://vicscherman.github.io/homework4/" target="_blank">
